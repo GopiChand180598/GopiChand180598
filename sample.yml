@@ -9,3 +9,4 @@ scenarios:
     think-time: 3s
     requests:
     - url: http://blazedemo.com
+    gopi
