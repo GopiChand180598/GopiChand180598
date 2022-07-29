@@ -1,0 +1,17 @@
+  </Target>
+
+  <Target Name="CustomClean" BeforeTargets="Clean">
+
+<PropertyGroup>
+
+     <_OutputCopyLocation>$(OutputPath)..\..\CustomOutput\</_OutputCopyLocation>
+
+  </PropertyGroup>
+
+    <Message Text="Inside Custom Clean" Importance="high"/>
+
+    <ItemGroup>
+
+      <_CustomFilesToDelete Include="$(_OutputCopyLocation)**\*"/>
+
+    </ItemGroup>
